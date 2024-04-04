@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jumpscare Example</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    #jumpscare {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    #jumpscare.show {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+
+<div id="jumpscare">
+    <img src="https://media.discordapp.net/attachments/1144985007929171969/1225556144018161756/New_Project_27.png?ex=66218f1a&is=660f1a1a&hm=c05b1abf3f33f207ddaef5bce4a729b3ab5d6bbb7b85f93f95dfa5ccef34a119&=&format=webp&quality=lossless&width=260&height=295" alt="Jumpscare" width="260" height="295">
+</div>
+
+<script>
+    // Function to show the jumpscare
+    function showJumpscare() {
+        var jumpscareElement = document.getElementById('jumpscare');
+        jumpscareElement.classList.add('show');
+    }
+
+    // Call the function after a certain delay (in milliseconds)
+    setTimeout(showJumpscare, 3000); // Change the delay as needed
+
+</script>
+
+</body>
+</html>
